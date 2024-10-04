@@ -1,13 +1,11 @@
-# Your Name Here
+# Kelly Joyce
 # UWYO COSC 1010
-# Submission Date
-# Lab 03 
-# Lab Section: 
-# Sources, people worked with, help given to: 
-# your
-# comments
-# here
-
+# 10/3/2024
+# Lab 04 
+# Lab Section: 13
+# Sources, people worked with, help given to: Tanner Brown, TA Austin, TA Ben 
+# range(len(list)) is grabbing the index number and assigning it to the variable (: (: (: Hooray!
+# min() max() sum() len() powerful functions!
 
 
 # This is your second lab section. It will primarily be about working with lists
@@ -98,8 +96,21 @@ min_temps = [
 # Write a single for loop to calculate both the average maximum temperature and the average minimum temperature.
 # You cannot use any pre-existing functions (like mean()) and must perform the calculations manually.
 # Output the results of both calculations.
+max_total = 0
+min_total = 0
+
+for temp in range(len(max_temps)):  # grab index # for loop CALCULATES the averages
+        max_total += max_temps[temp]
+        min_total += min_temps[temp]
+
+print(f"Average max temperature: {max_total / len(max_temps)}")  # f string PRINTS averages
+print(f"Average min temperature: {min_total / len(min_temps)}")  
+
 
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
+
+print(f"Highest temperature recorded: {max(max_temps)}.") # finds max in max_temps
+print(f"Lowest temperature recorded: {min(min_temps)}.")  # finds min in min_temps
 
 
